@@ -22,6 +22,7 @@ This MVP already includes six assessment packages generated from the provided PD
 - `docs/official-launch-checklist.md`: preflight checklist for the first official launch
 - `docs/official-launch-package.md`: intro copy, repo description, public announcement and final push prep
 - `docs/final-push-commands.md`: exact final git commands for the chosen production repo
+- `docs/post-publish-report-2026-03-19.md`: first post-publish verification report for GitHub Pages
 - `android-twa/`: Android Trusted Web Activity wrapper for Play Store packaging
 - `stitch.mcp.example.toml`: safe Stitch MCP template without secrets
 
