@@ -13,3 +13,5 @@ Working with skills.html
 Your first conversation with Claude.html
 .chrome-test/
 stitch.mcp.local.toml
+__pycache__/
+*.pyc
