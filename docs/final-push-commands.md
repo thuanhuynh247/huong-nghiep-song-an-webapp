@@ -14,11 +14,14 @@ Do not add README, `.gitignore`, or license during GitHub repo creation if you w
 ## Final local commands
 
 ```powershell
-git add .
-git commit -m "Launch Huong Nghiep Song An webapp"
-git branch -M main
 git push -u origin main
 ```
+
+## Current local state
+
+- Branch: `main`
+- Working tree: clean
+- Latest launch commit already exists locally: `32c6979` (`Launch Huong Nghiep Song An webapp`)
 
 ## After pushing
 
