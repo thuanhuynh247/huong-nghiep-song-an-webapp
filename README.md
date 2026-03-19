@@ -1,24 +1,24 @@
-# Claude 101 - Course Guide Viet Hoa
+# Claude 101 - Hướng Dẫn Khóa Học Việt Hóa
 
-Ban Viet hoa day du cho khoa hoc `Claude 101` tren Anthropic Academy, duoc trinh bay lai thanh mot static site de doc va tra cuu tren GitHub Pages.
+Bản Việt hóa đầy đủ cho khóa học `Claude 101` trên Anthropic Academy, được trình bày lại thành một static site để đọc và tra cứu trên GitHub Pages.
 
-## Chay local
+## Chạy local
 
-Chi can mo file [index.html](./index.html) trong trinh duyet, hoac dung bat ky static server nao.
+Chỉ cần mở file [index.html](./index.html) trong trình duyệt, hoặc dùng bất kỳ static server nào.
 
-## Deploy len GitHub Pages
+## Deploy lên GitHub Pages
 
-1. Tao repo GitHub va push code len nhanh `main`.
-2. Vao `Settings > Pages` neu GitHub yeu cau chon source, hay chon `GitHub Actions`.
-3. Workflow `Deploy GitHub Pages` se tu dong build artifact va publish site.
+1. Tạo repo GitHub và push code lên nhánh `main`.
+2. Vào `Settings > Pages`, nếu GitHub yêu cầu chọn source thì chọn `GitHub Actions`.
+3. Workflow `Deploy GitHub Pages` sẽ tự động build artifact và publish site.
 
-Sau khi workflow chay xong, site se co dang:
+Sau khi workflow chạy xong, site sẽ có dạng:
 
-- `https://<username>.github.io/<repo>/` doi voi project site
-- `https://<username>.github.io/` neu day la user site repo
+- `https://<username>.github.io/<repo>/` đối với project site
+- `https://<username>.github.io/` nếu đây là user site repo
 
-## Ghi chu noi dung
+## Ghi chú nội dung
 
-- Day la ban Viet hoa va trinh bay lai de doc thuan tien tren web, khong thay the nen tang hoc goc.
-- Bo HTML nguon dang nhap duoc dung lam input bien soan trong workspace local; repo public chi chua giao dien da Viet hoa.
-- Link khoa hoc goc: https://anthropic.skilljar.com/claude-101
+- Đây là bản Việt hóa và trình bày lại để đọc thuận tiện trên web, không thay thế nền tảng học gốc.
+- Bộ HTML nguồn đăng nhập được dùng làm input biên soạn trong workspace local; repo public chỉ chứa giao diện đã Việt hóa.
+- Link khóa học gốc: https://anthropic.skilljar.com/claude-101

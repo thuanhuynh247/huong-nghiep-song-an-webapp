@@ -157,7 +157,7 @@ function renderLessons(lessons) {
     objectivesCard.append(renderBulletList(lesson.objectives));
 
     const highlightCard = createEl("section", "side-card");
-    highlightCard.append(createEl("h4", "", "Key takeaways"));
+    highlightCard.append(createEl("h4", "", "Điểm chính"));
     highlightCard.append(renderBulletList(lesson.highlights));
 
     sideCol.append(objectivesCard, highlightCard);
