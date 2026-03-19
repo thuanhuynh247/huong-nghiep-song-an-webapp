@@ -8,7 +8,7 @@ Chi can mo file [index.html](./index.html) trong trinh duyet, hoac dung bat ky s
 
 ## Deploy len GitHub Pages
 
-1. Tao repo GitHub va push code len nhanh `master`.
+1. Tao repo GitHub va push code len nhanh `main`.
 2. Vao `Settings > Pages` neu GitHub yeu cau chon source, hay chon `GitHub Actions`.
 3. Workflow `Deploy GitHub Pages` se tu dong build artifact va publish site.
 
