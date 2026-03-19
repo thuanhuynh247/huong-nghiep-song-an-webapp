@@ -1,6 +1,6 @@
-# Claude 101 - Landing Page Viet Hoa
+# Claude 101 - Course Guide Viet Hoa
 
-Landing page tieng Viet cho khoa hoc `Claude 101` tren Anthropic Academy, duoc thiet ke dang static site de dua len GitHub Pages nhanh gon.
+Ban Viet hoa day du cho khoa hoc `Claude 101` tren Anthropic Academy, duoc trinh bay lai thanh mot static site de doc va tra cuu tren GitHub Pages.
 
 ## Chay local
 
@@ -19,5 +19,6 @@ Sau khi workflow chay xong, site se co dang:
 
 ## Ghi chu noi dung
 
-- Day la landing page gioi thieu bang tieng Viet, khong phai mirror cua nen tang hoc.
+- Day la ban Viet hoa va trinh bay lai de doc thuan tien tren web, khong thay the nen tang hoc goc.
+- Bo HTML nguon dang nhap duoc dung lam input bien soan trong workspace local; repo public chi chua giao dien da Viet hoa.
 - Link khoa hoc goc: https://anthropic.skilljar.com/claude-101
