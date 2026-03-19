@@ -1,0 +1,46 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="40" fill="url(#bg)"/>
+  <circle cx="150" cy="128" r="126" fill="#F3BE63" fill-opacity="0.22"/>
+  <circle cx="1064" cy="112" r="132" fill="#0F766E" fill-opacity="0.18"/>
+  <circle cx="930" cy="518" r="140" fill="#B55267" fill-opacity="0.16"/>
+
+  <rect x="76" y="72" width="1048" height="486" rx="36" fill="url(#panel)" stroke="rgba(255,255,255,0.16)"/>
+
+  <rect x="118" y="116" width="96" height="96" rx="28" fill="url(#accent)"/>
+  <path d="M148 194V134H166L202 186V134H226V194H208L172 143V194H148Z" fill="#FFF7F1"/>
+  <path d="M187 90C225.66 90 257 121.34 257 160V166H233V160C233 134.595 212.405 114 187 114C161.595 114 141 134.595 141 160V166H117V160C117 121.34 148.34 90 187 90Z" fill="#F6A15D"/>
+
+  <text x="286" y="166" fill="#F4EFE7" font-family="Fraunces, serif" font-size="62" font-weight="700">Huong Nghiep Song An</text>
+  <text x="286" y="228" fill="#F3E6D8" font-family="Be Vietnam Pro, sans-serif" font-size="27" font-weight="600">Webapp trắc nghiệm hướng nghiệp dùng trực tiếp trên web</text>
+
+  <text x="118" y="314" fill="#FFF8EF" font-family="Fraunces, serif" font-size="72" font-weight="700">6 bộ trắc nghiệm</text>
+  <text x="118" y="374" fill="#E6D9CB" font-family="Be Vietnam Pro, sans-serif" font-size="28">Holland, Grit, MIPQ, CED cho nhiều nhóm người dùng</text>
+
+  <g>
+    <rect x="118" y="432" width="254" height="78" rx="22" fill="#FFF8EF" fill-opacity="0.12"/>
+    <text x="148" y="478" fill="#FFF7F1" font-family="Be Vietnam Pro, sans-serif" font-size="24" font-weight="700">269 câu hỏi đã nhập</text>
+  </g>
+  <g>
+    <rect x="390" y="432" width="248" height="78" rx="22" fill="#FFF8EF" fill-opacity="0.12"/>
+    <text x="420" y="478" fill="#FFF7F1" font-family="Be Vietnam Pro, sans-serif" font-size="24" font-weight="700">Lưu tiến độ cục bộ</text>
+  </g>
+  <g>
+    <rect x="656" y="432" width="300" height="78" rx="22" fill="#FFF8EF" fill-opacity="0.12"/>
+    <text x="686" y="478" fill="#FFF7F1" font-family="Be Vietnam Pro, sans-serif" font-size="24" font-weight="700">Cài như PWA trên điện thoại</text>
+  </g>
+
+  <defs>
+    <linearGradient id="bg" x1="78" y1="34" x2="1122" y2="594" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17313B"/>
+      <stop offset="1" stop-color="#27535E"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="600" y1="72" x2="600" y2="558" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#214550"/>
+      <stop offset="1" stop-color="#17313B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="118" y1="116" x2="214" y2="212" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F1744D"/>
+      <stop offset="1" stop-color="#F3BE63"/>
+    </linearGradient>
+  </defs>
+</svg>

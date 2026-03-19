@@ -3,157 +3,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Claude 101 Tiếng Việt | Hướng Dẫn Khóa Học Đầy Đủ</title>
+  <title>Huong Nghiep Song An | Webapp trắc nghiệm hướng nghiệp</title>
   <meta
     name="description"
-    content="Bản Việt hóa đầy đủ cho khóa Claude 101, được tổng hợp từ bộ HTML nguồn trong workspace và trình bày lại thành một hướng dẫn khóa học dễ đọc trên GitHub Pages."
+    content="Webapp trắc nghiệm hướng nghiệp gồm Holland, Grit, MIPQ và CED, dùng trực tiếp trên web và có thể cài như ứng dụng PWA."
   >
-  <meta name="theme-color" content="#e36b3b">
-  <meta property="og:title" content="Claude 101 Tiếng Việt">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#17313b">
+  <meta name="application-name" content="Huong Nghiep Song An">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Huong Nghiep">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="canonical" href="https://thuanhuynh247.github.io/huong-nghiep-song-an-webapp/">
+  <meta property="og:title" content="Huong Nghiep Song An">
+  <meta property="og:url" content="https://thuanhuynh247.github.io/huong-nghiep-song-an-webapp/">
   <meta
     property="og:description"
-    content="Đọc toàn bộ nội dung Claude 101 bằng tiếng Việt qua 13 bài học, 4 module và mục lục điều hướng nhanh."
+    content="Làm bài trắc nghiệm hướng nghiệp trên web, lưu tiến độ, xem kết quả và tiếp tục hành trình hiểu mình trên mọi thiết bị."
   >
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:image" content="https://thuanhuynh247.github.io/huong-nghiep-song-an-webapp/social-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://thuanhuynh247.github.io/huong-nghiep-song-an-webapp/social-preview.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./app-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <nav class="topbar">
-        <a class="brand" href="#top" aria-label="Claude 101 Tiếng Việt">
-          <span class="brand-mark">C101</span>
-          <span class="brand-copy">
-            <strong>Claude 101</strong>
-            <span>Bản Việt hóa đầy đủ</span>
-          </span>
-        </a>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="ambient ambient-three" aria-hidden="true"></div>
 
-        <div class="topbar-actions">
-          <a class="button button-ghost button-small" href="https://anthropic.skilljar.com/claude-101" target="_blank" rel="noreferrer">
-            Khóa học gốc
-          </a>
-          <a class="button button-ghost button-small" href="https://github.com/thuanhuynh247/claude-101-viet-hoa" target="_blank" rel="noreferrer">
-            GitHub repo
-          </a>
-        </div>
-      </nav>
+  <div class="app-frame">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Huong Nghiep Song An">
+        <span class="brand-mark">HN</span>
+        <span class="brand-copy">
+          <strong>Huong Nghiep Song An</strong>
+          <span>Career assessment webapp</span>
+        </span>
+      </a>
+
+      <div class="topbar-actions">
+        <button id="install-app" class="button button-ghost hidden" type="button">
+          Cài lên điện thoại
+        </button>
+        <button id="jump-history" class="button button-ghost" type="button">
+          Lịch sử
+        </button>
+      </div>
     </header>
 
     <main id="top">
-      <section class="hero" data-reveal>
+      <section class="hero card">
         <div class="hero-copy">
-          <p class="eyebrow">Anthropic Academy / Claude 101 / Việt hóa từ bộ HTML nguồn trong workspace</p>
-          <h1>Claude 101 bằng tiếng Việt, đầy đủ 13 bài học trong một giao diện dễ đọc hơn.</h1>
+          <p class="eyebrow">Song An / Huong nghiep / Webapp</p>
+          <h1>Webapp trắc nghiệm hướng nghiệp giúp người dùng hiểu mình nhanh hơn, rõ hơn, ngay trên web.</h1>
           <p class="hero-text">
-            Trang này không còn là landing page giới thiệu ngắn. Nó tổng hợp lại toàn bộ nội dung
-            của khóa học thành một hướng dẫn khóa học có mục lục, tìm nhanh, phân chia module và bài học rõ ràng
-            để bạn đọc, tra cứu và quay lại khi cần.
+            Phiên bản này chạy trực tiếp trên trình duyệt điện thoại và máy tính: có catalog bài test, quiz runner, lưu tiến độ, lưu lịch sử và hiển thị kết quả theo từng thang đo. Người dùng vẫn có thể cài ra màn hình chính như một ứng dụng.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#lessons">
-              Bắt đầu đọc khóa học
-            </a>
-            <a class="button button-secondary" href="https://anthropic.skilljar.com/claude-101" target="_blank" rel="noreferrer">
-              Mở khóa học trên Skilljar
-            </a>
-          </div>
-
-          <div class="hero-stats" id="hero-stats">
-            <article>
-              <strong>13 bài học</strong>
-              <span>Từ nhập môn đến tổng kết</span>
-            </article>
-            <article>
-              <strong>186 phút</strong>
-              <span>Tổng thời lượng ước tính</span>
-            </article>
-            <article>
-              <strong>4 module</strong>
-              <span>Gặp Claude, tổ chức công việc, mở rộng, ứng dụng</span>
-            </article>
-            <article>
-              <strong>Certificate</strong>
-              <span>Cần hoàn tất bài quiz trên nền tảng gốc</span>
-            </article>
+            <a class="button button-primary" href="#assessment-grid">Bắt đầu trên web</a>
+            <a class="button button-secondary" href="#workspace">Mở khu làm bài</a>
           </div>
         </div>
 
-        <aside class="hero-panel">
-          <div class="panel-card panel-card-accent">
-            <p class="panel-label">Tổng quan khóa học</p>
-            <h2>Bản đọc hiện tại gồm:</h2>
-            <ul class="panel-list">
-              <li>Mục tiêu học tập của từng bài</li>
-              <li>Các điểm chính được Việt hóa đầy đủ</li>
-              <li>Hướng dẫn thực hành, ví dụ và luồng công việc</li>
-              <li>Câu hỏi suy ngẫm và phần "Tiếp theo là gì?" để nối tiếp giữa các bài</li>
-            </ul>
+        <div class="hero-side">
+          <div class="hero-panel">
+            <p class="panel-label">Bộ công cụ đang có</p>
+            <div class="hero-stats">
+              <article>
+                <strong id="stat-assessments">0</strong>
+                <span>Bài trắc nghiệm</span>
+              </article>
+              <article>
+                <strong id="stat-questions">0</strong>
+                <span>Câu hỏi đã nhập</span>
+              </article>
+              <article>
+                <strong>Offline-ready</strong>
+                <span>Lưu tiến độ cục bộ</span>
+              </article>
+              <article>
+                <strong>Public webapp</strong>
+                <span>Triển khai tĩnh, dễ chia sẻ link</span>
+              </article>
+            </div>
           </div>
-
-          <div class="panel-card search-card">
-            <label class="search-label" for="lesson-search">Tìm nhanh theo tên bài, chủ đề hoặc tính năng</label>
-            <input
-              id="lesson-search"
-              class="search-input"
-              type="search"
-              placeholder="Ví dụ: Projects, Artifacts, Research, Slack..."
-              autocomplete="off"
-            >
-            <p class="search-hint">Mẹo: gõ "Excel", "Projects", "Enterprise Search" hoặc "Research" để lọc nhanh đúng bài học.</p>
-          </div>
-        </aside>
+        </div>
       </section>
 
-      <section class="module-strip" id="module-strip" data-reveal></section>
+      <section class="toolbar card">
+        <div id="audience-filters" class="chip-row" aria-label="Lọc đối tượng"></div>
+        <label class="search-wrap" for="assessment-search">
+          <span>Tìm theo tên bài test, nhóm tuổi hoặc chủ đề</span>
+          <input
+            id="assessment-search"
+            class="search-input"
+            type="search"
+            placeholder="Ví dụ: Holland, THPT, bền chí, đa trí thông minh..."
+            autocomplete="off"
+          >
+        </label>
+      </section>
 
-      <section class="course-layout">
-        <aside class="course-nav" data-reveal>
-          <div class="nav-card">
-            <p class="panel-label">Mục lục bài học</p>
-            <p class="nav-note">Bấm vào tên bài để nhảy đến nội dung. Bài đang đọc sẽ được làm nổi bật tự động.</p>
-            <nav id="lesson-nav" class="lesson-nav"></nav>
+      <section class="content-grid">
+        <section class="catalog-panel card">
+          <div class="section-head">
+            <p class="eyebrow">Danh mục</p>
+            <h2>Chọn bài test phù hợp với đối tượng và mục tiêu tư vấn.</h2>
           </div>
-        </aside>
+          <div id="assessment-grid" class="assessment-grid"></div>
+        </section>
 
-        <div class="course-main">
-          <section class="section-head" data-reveal>
-            <p class="eyebrow">Bản Việt hóa đầy đủ</p>
-            <h2>Mỗi bài học được viết lại theo bố cục dễ đọc nhanh, nhưng vẫn giữ toàn bộ ý chính của nội dung nguồn.</h2>
-            <p>
-              Bạn có thể mở dần từng bài học, tìm theo từ khóa, hoặc dùng mục lục để di chuyển giữa các bài.
-              Phần feedback và bản quyền được gom lại ở footer để trang gọn hơn.
-            </p>
-          </section>
+        <section class="workspace-panel card" id="workspace">
+          <div id="workspace-root"></div>
+        </section>
+      </section>
 
-          <div id="lesson-empty" class="empty-state hidden" data-reveal>
-            Không tìm thấy bài nào khớp với từ khóa vừa nhập. Thử tìm theo tên tính năng, vai trò hoặc module.
-          </div>
+      <section class="history-panel card" id="history">
+        <div class="section-head">
+          <p class="eyebrow">Lịch sử cục bộ</p>
+          <h2>Các kết quả gần đây được giữ ngay trên thiết bị để người dùng quay lại xem.</h2>
+        </div>
+        <div id="history-grid" class="history-grid"></div>
+      </section>
 
-          <div id="lessons" class="lesson-list"></div>
+      <section class="launch-panel card" id="launch-info">
+        <div class="section-head">
+          <p class="eyebrow">Sẵn sàng công bố</p>
+          <h2>Webapp này đã được chuẩn bị để chia sẻ công khai, dùng ngay trên web và cài như một ứng dụng.</h2>
+        </div>
+
+        <div class="launch-grid">
+          <article class="support-card">
+            <strong>Web-first, không cần cài đặt trước</strong>
+            <p class="support-copy">Người dùng có thể mở link và làm bài ngay trên trình duyệt. Nếu muốn, họ vẫn có thể thêm webapp ra màn hình chính bằng PWA.</p>
+          </article>
+          <article class="support-card">
+            <strong>Dữ liệu cá nhân theo hướng local-first</strong>
+            <p class="support-copy">Tiến độ và lịch sử hiện tại được giữ cục bộ trên thiết bị. Webapp cũng đã có nút xuất dữ liệu và xóa dữ liệu để người dùng chủ động quản lý.</p>
+          </article>
+          <article class="support-card">
+            <strong>Bộ công cụ đã tích hợp</strong>
+            <p class="support-copy">Hiện có 6 thang đo với 269 câu hỏi được nhập từ manual PDF: Holland, Grit, MIPQ và CED cho các nhóm đối tượng khác nhau.</p>
+          </article>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>
-        Nguồn: bộ HTML khóa học mà bạn cung cấp trong workspace và trang khóa học gốc tại
-        <a href="https://anthropic.skilljar.com/claude-101" target="_blank" rel="noreferrer">anthropic.skilljar.com/claude-101</a>.
-      </p>
-      <p>
-        Lưu ý: đây là bản Việt hóa và trình bày lại để đọc trên GitHub Pages. Quiz, tiến độ học và certificate vẫn được thực hiện trên nền tảng gốc.
-      </p>
+    <footer class="footer card">
+      <div class="footer-main">
+        <div class="footer-copy">
+          <p>Nguồn dữ liệu đầu vào được sinh từ các manual PDF trong thư mục công cụ trắc nghiệm Hướng nghiệp Sông An.</p>
+          <p>Webapp này có thể public trực tiếp bằng static hosting hoặc GitHub Pages; lớp Android wrapper TWA vẫn có thể dùng sau nếu muốn lên Play Store.</p>
+        </div>
+
+        <div class="footer-actions">
+          <button id="export-data" class="button button-secondary" type="button">Xuất dữ liệu cục bộ</button>
+          <button id="clear-data" class="button button-ghost" type="button">Xóa dữ liệu cục bộ</button>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Liên kết chân trang">
+        <a href="./privacy.html">Chính sách riêng tư</a>
+        <a href="#launch-info">Thông tin phát hành</a>
+        <a href="#assessment-grid">Bắt đầu làm bài</a>
+      </nav>
     </footer>
   </div>
 
-  <script src="./course-data.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Huong Nghiep Song An",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web Browser",
+      "browserRequirements": "Requires JavaScript and modern web browser",
+      "inLanguage": "vi",
+      "isAccessibleForFree": true,
+      "description": "Webapp trắc nghiệm hướng nghiệp gồm Holland, Grit, MIPQ và CED, giúp người dùng làm bài trên web, lưu tiến độ và xem kết quả."
+    }
+  </script>
+  <script src="./assessment-data.js"></script>
   <script src="./script.js"></script>
 </body>
 </html>

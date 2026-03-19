@@ -1,0 +1,8 @@
+# Copy this file to stitch.mcp.local.toml and replace the placeholder value.
+# Keep the local file out of git so the real API key never lands in the repo.
+
+[mcp_servers.stitch]
+url = "https://stitch.googleapis.com/mcp"
+
+[mcp_servers.stitch.http_headers]
+"X-Goog-Api-Key" = "<PASTE_API_KEY_HERE>"

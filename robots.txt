@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://thuanhuynh247.github.io/huong-nghiep-song-an-webapp/sitemap.xml

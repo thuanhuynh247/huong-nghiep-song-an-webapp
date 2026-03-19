@@ -1,0 +1,4 @@
+interface:
+  display_name: "Huong Nghiep Marketing"
+  short_description: "Launch the career assessment app"
+  default_prompt: "Use $huong-nghiep-marketing to shape positioning, onboarding, and Android launch messaging for the Huong nghiep app."

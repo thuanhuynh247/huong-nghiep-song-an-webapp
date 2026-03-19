@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huong Nghiep Song An | Chính sách riêng tư</title>
+  <meta name="description" content="Chính sách riêng tư cho webapp Huong Nghiep Song An.">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" href="./app-icon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --bg: #f8f1e7;
+      --panel: rgba(255, 251, 245, 0.94);
+      --line: rgba(27, 35, 42, 0.12);
+      --text: #13232c;
+      --muted: #625d59;
+      --accent: #f1744d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Be Vietnam Pro", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 18%, rgba(243, 190, 99, 0.28), transparent 20%),
+        radial-gradient(circle at 86% 10%, rgba(15, 118, 110, 0.18), transparent 20%),
+        linear-gradient(180deg, #fdf8f2 0%, #f5ede1 48%, #fbf4ea 100%);
+      padding: 24px;
+    }
+
+    main {
+      width: min(100%, 900px);
+      margin: 0 auto;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      background: var(--panel);
+      box-shadow: 0 24px 60px rgba(39, 30, 24, 0.12);
+    }
+
+    h1,
+    h2 {
+      font-family: "Fraunces", serif;
+      letter-spacing: -0.04em;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 0.96;
+    }
+
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 1.4rem;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+      line-height: 1.72;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), #d65b33);
+      color: #fff7f1;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Chính sách riêng tư</h1>
+    <p>Huong Nghiep Song An hiện hoạt động theo hướng webapp local-first. Phiên bản này ưu tiên giúp người dùng làm bài, xem kết quả và quản lý dữ liệu ngay trên thiết bị của mình.</p>
+
+    <h2>Dữ liệu nào đang được lưu</h2>
+    <ul>
+      <li>Tiến độ làm bài dở dang.</li>
+      <li>Lịch sử kết quả đã hoàn thành.</li>
+      <li>Các dữ liệu trên hiện được lưu cục bộ trong trình duyệt bằng bộ nhớ của thiết bị.</li>
+    </ul>
+
+    <h2>Dữ liệu có được gửi lên máy chủ không</h2>
+    <p>Ở phiên bản hiện tại, webapp không yêu cầu đăng nhập và không mặc định đồng bộ lịch sử kết quả lên máy chủ riêng của ứng dụng. Nếu trong tương lai có thêm tính năng đồng bộ hoặc tài khoản, chính sách này cần được cập nhật tương ứng.</p>
+
+    <h2>Người dùng có quyền gì với dữ liệu của mình</h2>
+    <ul>
+      <li>Có thể tiếp tục làm bài từ thiết bị đã dùng trước đó.</li>
+      <li>Có thể xuất dữ liệu cục bộ bằng nút “Xuất dữ liệu cục bộ” trên webapp.</li>
+      <li>Có thể xóa toàn bộ dữ liệu cục bộ bằng nút “Xóa dữ liệu cục bộ” trên webapp.</li>
+    </ul>
+
+    <h2>Lưu ý khi dùng trên nhiều thiết bị</h2>
+    <p>Vì dữ liệu hiện được giữ cục bộ, kết quả trên thiết bị này sẽ không tự xuất hiện trên thiết bị khác trừ khi sau này webapp có thêm tính năng đồng bộ.</p>
+
+    <h2>Cập nhật chính sách</h2>
+    <p>Chính sách này nên được rà lại khi webapp thêm các tính năng như tài khoản, đồng bộ đám mây, analytics, hỗ trợ người dùng hoặc các tích hợp máy chủ khác.</p>
+
+    <a class="back-link" href="./">Quay lại webapp</a>
+  </main>
+</body>
+</html>

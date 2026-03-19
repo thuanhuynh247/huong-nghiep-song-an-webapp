@@ -1,24 +1,67 @@
-# Claude 101 - Hướng Dẫn Khóa Học Việt Hóa
+# Huong Nghiep Song An
 
-Bản Việt hóa đầy đủ cho khóa học `Claude 101` trên Anthropic Academy, được trình bày lại thành một static site để đọc và tra cứu trên GitHub Pages.
+Web-first PWA for career assessment and counseling workflows.
 
-## Chạy local
+This MVP already includes six assessment packages generated from the provided PDF manuals:
 
-Chỉ cần mở file [index.html](./index.html) trong trình duyệt, hoặc dùng bất kỳ static server nào.
+- Holland 16-22
+- Holland 23+
+- Grit Scale
+- MIPQ
+- CED THPT
+- CED DH/CD
 
-## Deploy lên GitHub Pages
+## What is in this repo
 
-1. Tạo repo GitHub và push code lên nhánh `main`.
-2. Vào `Settings > Pages`, nếu GitHub yêu cầu chọn source thì chọn `GitHub Actions`.
-3. Workflow `Deploy GitHub Pages` sẽ tự động build artifact và publish site.
+- `index.html`, `styles.css`, `script.js`: mobile-first assessment app shell
+- `assessment-data.js`: generated assessment catalog and question bank
+- `scripts/build_assessment_data.py`: PDF-to-JS ingestion pipeline
+- `docs/manual-ingestion-summary.md`: generated import summary
+- `manifest.webmanifest`, `sw.js`, `app-icon.svg`: PWA assets for the public webapp release
+- `docs/webapp-publication.md`: guide to publish the current app as a public webapp
+- `docs/official-launch-checklist.md`: preflight checklist for the first official launch
+- `docs/official-launch-package.md`: intro copy, repo description, public announcement and final push prep
+- `docs/final-push-commands.md`: exact final git commands for the chosen production repo
+- `android-twa/`: Android Trusted Web Activity wrapper for Play Store packaging
+- `stitch.mcp.example.toml`: safe Stitch MCP template without secrets
 
-Sau khi workflow chạy xong, site sẽ có dạng:
+## Run locally
 
-- `https://<username>.github.io/<repo>/` đối với project site
-- `https://<username>.github.io/` nếu đây là user site repo
+Open `index.html` in a browser, or serve the folder with any static server.
 
-## Ghi chú nội dung
+For the best PWA behavior, use a local static server instead of opening the file directly.
 
-- Đây là bản Việt hóa và trình bày lại để đọc thuận tiện trên web, không thay thế nền tảng học gốc.
-- Bộ HTML nguồn đăng nhập được dùng làm input biên soạn trong workspace local; repo public chỉ chứa giao diện đã Việt hóa.
-- Link khóa học gốc: https://anthropic.skilljar.com/claude-101
+## Publish as a webapp
+
+The fastest path is GitHub Pages. The repo already includes `.github/workflows/deploy-pages.yml`.
+That workflow now publishes only the actual webapp assets instead of the full repo contents.
+
+See `docs/webapp-publication.md` for the publication flow.
+
+## Regenerate assessment data
+
+Run:
+
+```powershell
+python scripts/build_assessment_data.py
+```
+
+This rebuilds:
+
+- `assessment-data.js`
+- `docs/manual-ingestion-summary.md`
+
+## Stitch MCP
+
+See `docs/stitch-mcp-setup.md`.
+
+The repo keeps only a template config. Use `stitch.mcp.local.toml` for the real API key and keep it out of git.
+
+## Release direction
+
+Current release path:
+
+1. Publish the webapp first.
+2. Validate question flow, scoring, and counselor feedback.
+3. Add Stitch-backed sync, history, and auth when the MCP runtime is available.
+4. Package later as TWA or another native wrapper if Play Store distribution is needed.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Huong Nghiep Engineer"
+  short_description: "Build the career assessment app"
+  default_prompt: "Use $huong-nghiep-engineer to design or build the Android-first Huong nghiep assessment app."
